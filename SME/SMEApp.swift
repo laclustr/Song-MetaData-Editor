@@ -9,24 +9,16 @@ import SwiftUI
 import SwiftData
 
 @main
-struct SMEApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+struct MusicManagerApp: App {
+    @StateObject private var cloudKitManager = CloudKitManager()
+    @StateObject private var audioFileManager = AudioFileManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(cloudKitManager)
+                .environmentObject(audioFileManager)
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(for: [Song.self, Album.self])
     }
 }

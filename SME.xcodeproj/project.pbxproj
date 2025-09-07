@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		93FB36BD2E6CB75300ECFF42 /* Exceptions for "SME" folder in "SME" target */ = {
+		934C4AAB2E6D054D00281441 /* Exceptions for "SME" folder in "SME" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +24,7 @@
 		93FB36B22E6CB75100ECFF42 /* SME */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				93FB36BD2E6CB75300ECFF42 /* Exceptions for "SME" folder in "SME" target */,
+				934C4AAB2E6D054D00281441 /* Exceptions for "SME" folder in "SME" target */,
 			);
 			path = SME;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 				DEVELOPMENT_TEAM = 757JJQG5H2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SME/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SME/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -179,7 +179,7 @@
 				DEVELOPMENT_TEAM = 757JJQG5H2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SME/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SME/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
